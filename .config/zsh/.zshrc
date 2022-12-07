@@ -103,7 +103,7 @@ source $ZSH/oh-my-zsh.sh
 alias config='/usr/bin/git --git-dir=/home/lucashemi/.dotfiles/ --work-tree=/home/lucashemi'
 alias weather="curl wttr.in"
 alias grep="grep --color=auto"
-export PATH=$PATH:~/scripts
+export PATH=$PATH:$HOME/scripts
 
 export EDITOR="vim"
 export TERMINAL="st"
@@ -121,7 +121,7 @@ export XAUTHORITY="$HOME/.Xauthority"
 #PS1
 #PROMPT="%n@%m:%~ $ "
 # Bash profile
-export PATH=$HOME/.local/bin:$PATH
+export PATH=$HOME/.eclipse/jee-2022-09/eclipse:$HOME/.local/src/idea/bin:$HOME/.local/bin:$PATH
 
 #[[ -f ~/.bashrc ]] && . ~/.bashrc
 
@@ -129,3 +129,4 @@ export PATH=$HOME/.local/bin:$PATH
 if [ -z "${DISPLAY}" ] && [ "${XDG_VTNR}" -eq 1 ]; then
 	  exec startx
 fi
+
